@@ -1,0 +1,17 @@
+#myCanvas {
+    border-width: 10px;
+    background-color: white;
+    border-style: ridge;
+}
+h2 {
+    border-radius: 10px;
+    width: 200px;
+    padding: 5px;
+}
+
+h3 {
+    display: inline-block;
+}
+body{
+	background-img: url("avenger_bg.jpg");
+}
