@@ -120,3 +120,44 @@ function my_keydown(e){
 	
 	
 }
+
+function up(){
+	if(player_Y > 0 ){
+		
+		player_Y = player_Y - hero_height;
+		console.log("X = " + player_X + " Y = " + player_Y);
+		canvas.remove(playerObj);
+		playerUpdate();
+	}
+	
+}
+function down(){
+	if(player_Y <= 520 ){
+		
+		player_Y = player_Y + hero_height;
+		console.log("X = " + player_X + " Y = " + player_Y);
+		canvas.remove(playerObj);
+		playerUpdate();
+	}
+	
+}
+function left(){
+	if(player_X > 10 ){
+		
+		player_X = player_X - hero_width;
+		console.log("X = " + player_X + " Y = " + player_Y);
+		canvas.remove(playerObj);
+		playerUpdate();
+	}
+	
+}
+function right(){
+	if(player_X <= 820 ){
+		
+		player_X = player_X + hero_width;
+		console.log("X = " + player_X + " Y = " + player_Y);
+		canvas.remove(playerObj);
+		playerUpdate();
+	}
+	
+}
